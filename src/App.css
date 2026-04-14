@@ -1,0 +1,61 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  background-color: #343541; /* Màu nền tối chuẩn AI app */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 260px;
+  background-color: #202123;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages-container {
+  flex: 1;
+  padding: 40px 20% 20px 20%;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.bot-message { background-color: #444654; align-self: flex-start; }
+.user-message { background-color: #0b141a; align-self: flex-end; margin-left: auto; }
+
+.input-container {
+  padding: 20px 20%;
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #565869;
+  background-color: #40414f;
+  color: white;
+}
+
+.send-btn {
+  padding: 10px 20px;
+  background-color: #10a37f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
