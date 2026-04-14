@@ -1,0 +1,118 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  background-color: #343541; /* Màu nền tối chuẩn AI app */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 260px;
+  background-color: #202123;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages-container {
+  flex: 1;
+  padding: 40px 20% 20px 20%;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.bot-message { background-color: #444654; align-self: flex-start; }
+.user-message { background-color: #0b141a; align-self: flex-end; margin-left: auto; }
+
+.input-container {
+  padding: 20px 20%;
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #565869;
+  background-color: #40414f;
+  color: white;
+}
+
+.send-btn {
+  padding: 10px 20px;
+  background-color: #10a37f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.new-chat-btn {
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid #565869;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.new-chat-btn:hover {
+  background-color: #2a2b32;
+}
+
+.chat-history p {
+  padding: 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.chat-history p:hover {
+  background-color: #2a2b32;
+}
+
+/* Sidebar Nav Styles */
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-link {
+  color: #ececf1;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #2a2b32;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #ffffff; /* Trang Home/About sẽ có nền trắng để dễ đọc */
+  overflow-y: auto;
+}
+
+/* Đảm bảo Chatbox vẫn giữ màu tối khi hiển thị trong main-content */
+.main-content:has(.chat-area) {
+  background-color: #343541;
+}
